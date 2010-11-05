@@ -1,0 +1,13 @@
+Build.PL
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/Data/Tabulate/Plugin/ASCIITable.pm
+t/00-load.t
+t/01_render.t
+t/99_check_manifest.t
+t/boilerplate.t
+t/pod-coverage.t
+t/pod.t
