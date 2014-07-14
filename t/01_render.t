@@ -11,10 +11,10 @@ my @array     = (1..10);
 my $tabulator = Data::Tabulate->new();
 my $html      = $tabulator->render('ASCIITable',{data => [@array]});
 
-my $check     = q~.------------.
-|  1 | 2 | 3 |
-|  4 | 5 | 6 |
-|  7 | 8 | 9 |
+my $check     = q~.----+---+---.
+| 1  | 2 | 3 |
+| 4  | 5 | 6 |
+| 7  | 8 | 9 |
 | 10 |   |   |
 '----+---+---'
 ~;
