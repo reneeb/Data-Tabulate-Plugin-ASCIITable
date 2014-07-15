@@ -6,7 +6,7 @@ use warnings;
 use strict;
 use Text::Table::Tiny;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
