@@ -1,0 +1,92 @@
+[![Build Status](https://travis-ci.org/reneeb/Data-Tabulate-Plugin-ASCIITable.svg?branch=master)](https://travis-ci.org/reneeb/Data-Tabulate-Plugin-ASCIITable)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/Data-Tabulate-Plugin-ASCIITable.png)](http://cpants.charsbar.org/dist/overview/Data-Tabulate-Plugin-ASCIITable)
+[![GitHub issues](https://img.shields.io/github/issues/reneeb/Data-Tabulate-Plugin-ASCIITable.svg)](https://github.com/reneeb/Data-Tabulate-Plugin-ASCIITable/issues)
+
+# NAME
+
+Data::Tabulate::Plugin::ASCIITable - generate ASCII tables with Data::Tabulate 
+
+# VERSION
+
+version 0.04
+
+# SYNOPSIS
+
+    use Data::Tabulate;
+    
+    my @array = (1..10);
+    my $foo = Data::Tabulate->new();
+    print $foo->render('ASCIITable',{data => [@array]});
+
+# EXPORT
+
+A list of functions that can be exported.  You can delete this section
+if you don't export anything, such as for a purely object-oriented module.
+
+# METHODS
+
+## new
+
+create a new object of `Data::Tabulate::Plugin::ASCIITable`
+
+## output
+
+returns a string that contains the ASCII table
+
+
+
+# Development
+
+The distribution is contained in a Git repository, so simply clone the
+repository
+
+```
+$ git clone http://github.com/reneeb/Data-Tabulate-Plugin-ASCIITable.git
+```
+
+and change into the newly-created directory.
+
+```
+$ cd Data-Tabulate-Plugin-ASCIITable
+```
+
+The project uses [`Dist::Zilla`](https://metacpan.org/pod/Dist::Zilla) to
+build the distribution, hence this will need to be installed before
+continuing:
+
+```
+$ cpanm Dist::Zilla
+```
+
+To install the required prequisite packages, run the following set of
+commands:
+
+```
+$ dzil authordeps --missing | cpanm
+$ dzil listdeps --author --missing | cpanm
+```
+
+The distribution can be tested like so:
+
+```
+$ dzil test
+```
+
+To run the full set of tests (including author and release-process tests),
+add the `--author` and `--release` options:
+
+```
+$ dzil test --author --release
+```
+
+# AUTHOR
+
+Renee Baecker <reneeb@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2014 by Renee Baecker.
+
+This is free software, licensed under:
+
+    The Artistic License 2.0 (GPL Compatible)
